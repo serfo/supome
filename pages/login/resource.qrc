@@ -1,0 +1,6 @@
+<RCC>
+  <qresource>
+    <file>./../../static/img/background.jpg</file>
+    <file>./../../static/img/logo.png</file>
+  </qresource>
+</RCC>
