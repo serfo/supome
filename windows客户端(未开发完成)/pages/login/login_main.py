@@ -4,13 +4,12 @@ from PyQt5.QtCore import Qt, QLocale, QRect
 from PyQt5.QtGui import QIcon, QPixmap, QColor
 from PyQt5.QtWidgets import QApplication
 from qfluentwidgets import setThemeColor, FluentTranslator, SplitTitleBar, isDarkTheme
-from .LoginWindow import Ui_Form
-
+from LoginWindow import Ui_Form
+from function.login import login_get_cookies,login_status
 
 
 def isWin11():
     return sys.platform == 'win32' and sys.getwindowsversion().build >= 22000
-
 
 if isWin11():
     from qframelesswindow import AcrylicWindow as Window
